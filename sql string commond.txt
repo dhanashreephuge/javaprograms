@@ -1,0 +1,64 @@
+SELECT CONCAT('Dhanashree','Phuge') As full_name
+    -> ;
++-----------------+
+| full_name       |
++-----------------+
+| DhanashreePhuge |
++-----------------+
+1 row in set (0.01 sec)
+
+mysql> select length('Dhanashree') as char_length;
++-------------+
+| char_length |
++-------------+
+|          10 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select Lcase('DHANASHREEphuge') as lower_str;
++-----------------+
+| lower_str       |
++-----------------+
+| dhanashreephuge |
++-----------------+
+1 row in set (0.01 sec)
+
+mysql> select Ucase('DHANASHREEphuge') as upper_str;
++-----------------+
+| upper_str       |
++-----------------+
+| DHANASHREEPHUGE |
++-----------------+
+1 row in set (0.01 sec)
+
+mysql> select Replace('I like panipuri','panipuri','vadapav') as replace_str;
++----------------+
+| replace_str    |
++----------------+
+| I like vadapav |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select trim('great' from 'great things') as trim_str;
++----------+
+| trim_str |
++----------+
+|  things  |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select substr('Jai Shree Krishna',5,9) as substring;
++-----------+
+| substring |
++-----------+
+| Shree Kri |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select substr('JaiShreeKrishna',5,9) as substring;
++-----------+
+| substring |
++-----------+
+| hreeKrish |
++-----------+
+1 row in set (0.00 sec)

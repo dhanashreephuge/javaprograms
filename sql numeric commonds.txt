@@ -1,0 +1,71 @@
+mysql> select abs(-20) as absolute;
++----------+
+| absolute |
++----------+
+|       20 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select round(34.67547) as rounded;
++---------+
+| rounded |
++---------+
+|      35 |
++---------+
+1 row in set (0.01 sec)
+
+mysql> select ceil(20.45) as ceilvalue;
++-----------+
+| ceilvalue |
++-----------+
+|        21 |
++-----------+
+1 row in set (0.01 sec)
+
+mysql> select floor(10.45) as floorvalue;
++------------+
+| floorvalue |
++------------+
+|         10 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select power(2,4) as powervalue;
++------------+
+| powervalue |
++------------+
+|         16 |
++------------+
+1 row in set (0.01 sec)
+
+mysql> select sqrt(25) as squarevalue;
++-------------+
+| squarevalue |
++-------------+
+|           5 |
++-------------+
+1 row in set (0.01 sec)
+
+mysql> select exp(45) as exponential;
++-----------------------+
+| exponential           |
++-----------------------+
+| 3.4934271057485095e19 |
++-----------------------+
+1 row in set (0.00 sec)
+
+mysql> select log(2.4) as logarithmic_val;
++--------------------+
+| logarithmic_val    |
++--------------------+
+| 0.8754687373538999 |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select mod(17,5) as modval;
++--------+
+| modval |
++--------+
+|      2 |
++--------+
+1 row in set (0.00 sec)

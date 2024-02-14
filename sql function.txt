@@ -1,0 +1,93 @@
+ SELECT MIN(salary) from employees;
++-------------+
+| MIN(salary) |
++-------------+
+|        3.80 |
++-------------+
+1 row in set (0.01 sec)
+
+mysql> SELECT MAX(salary) from employees;
++-------------+
+| MAX(salary) |
++-------------+
+|    75000.60 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT AVG(salary) from employees;
++--------------+
+| AVG(salary)  |
++--------------+
+| 26002.830000 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT SUM(salary) from employees;
++-------------+
+| SUM(salary) |
++-------------+
+|   130014.15 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(salary) from employees;
++---------------+
+| COUNT(salary) |
++---------------+
+|             5 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT salary, SUM(salary) from employees GROUP BY salary
+;
++----------+-------------+
+| salary   | SUM(salary) |
++----------+-------------+
+| 75000.60 |    75000.60 |
+|     5.50 |        5.50 |
+| 55000.00 |    55000.00 |
+|     4.25 |        4.25 |
+|     3.80 |        3.80 |
++----------+-------------+
+5 rows in set (0.01 sec)
+ SELECT dep_id,SUM(salary) from employees GROUP BY dep_id;
+
++--------+-------------+
+| dep_id | SUM(salary) |
++--------+-------------+
+|   NULL |   130014.15 |
++--------+-------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT manager_id, SUM(salary) from employees GROUP BY manager_id;
++------------+-------------+
+| manager_id | SUM(salary) |
++------------+-------------+
+|        111 |    75000.60 |
+|        112 |        5.50 |
+|        113 |    55000.00 |
+|        114 |        4.25 |
+|        115 |        3.80 |
++------------+-------------+
+5 rows in set (0.01 sec)
+SELECT manager_id, SUM(salary) from employees GROUP BY manager_id Having (SUM(salary)>40000);
++------------+-------------+
+| manager_id | SUM(salary) |
++------------+-------------+
+|        111 |    75000.60 |
+|        112 |    50000.50 |
+|        113 |    55000.00 |
+|        114 |    42000.25 |
++------------+-------------+
+4 rows in set (0.00 sec)
+ SELECT CONCAT(emp_name,'(',job_name,')')AS empjob from employees;
++----------------+
+| empjob         |
++----------------+
+| ram(developer) |
+| mita(designer) |
+| sita(DBA)      |
+| gita(network)  |
+| raj(QA)        |
++----------------+
+5 rows in set (0.00 sec)
