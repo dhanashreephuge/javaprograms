@@ -1,5 +1,5 @@
 public class InvertedNum {
-    static void patterncd(int N)
+    static void pattern(int N)
 {
    
     for (int i = 0; i < N; i++)
