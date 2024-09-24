@@ -55,6 +55,7 @@ public class ArrayMatrix {
                     if (matrix[i][j] == -1) {
                         matrix[i][j] = 0;
                     }
+                   
                 }
                 System.out.println();
             } 
