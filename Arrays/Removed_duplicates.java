@@ -1,24 +1,19 @@
+// Program to print the duplicate elements of an array.
 import java.util.*;
 
 public class Removed_duplicates {
-    public static void main(String[] args) {
-        int arr[] = {1,1,2,2,2,3,3};
-        int k = removeDuplicates(arr);
-        System.out.println("The array after removing duplicate elements is ");
-        for (int i = 0; i < k; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-    static int removeDuplicates(int[] arr) {
-        HashSet < Integer > set = new HashSet < > ();
-        for (int i = 0; i < arr.length; i++) {
-            set.add(arr[i]);
-        }
-        int k = set.size();
-        int j = 0;
-        for (int x: set) {
-            arr[j++] = x;
-        }
-        return k;
-    }
-}
+    public static void main(String[] args) {      
+          
+        //Initialize array   
+        int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3};   
+          
+        System.out.println("Duplicate elements in given array: ");  
+        //Searches for duplicate element  
+        for(int i = 0; i < arr.length; i++) {  
+            for(int j = i + 1; j < arr.length; j++) {  
+                if(arr[i] == arr[j])  
+                    System.out.println(arr[j]);  
+            }  
+        }  
+    }  
+}  
