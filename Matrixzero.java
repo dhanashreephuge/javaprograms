@@ -14,9 +14,9 @@ public class Matrixzero {
     public static void main(String[] args) {
         // Initialize the matrix
         int[][] matrix = {
-            {1, 2, 3},
-            {4, 0, 5},
-            {6, 7, 8}
+            {1, 2, 1},
+            {5, 0, 5},
+            {6, 0, 8}
         };
         
         System.out.println("Original Matrix:" );

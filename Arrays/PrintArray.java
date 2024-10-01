@@ -18,3 +18,68 @@ public class PrintArray {
         }  
     }  
 }  
+
+
+//================================================================================================
+/*public class ArrayMatrixWithoutUserInput {
+    public static void main(String[] args) {
+        // Define the number of rows (m) and columns (n)
+        int m = 3;  // Number of rows
+        int n = 4;  // Number of columns
+
+        // Initialize the array with predefined values
+        int[][] array = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12}
+        };
+
+        // Print the array in matrix format (m x n)
+        System.out.println("The array in " + m + "x" + n + " format is:");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();  // Move to the next row after printing each row
+        }
+    }
+}
+ */
+
+ // using user
+ /*import java.util.Scanner;
+
+public class ArrayMatrixFormat {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the number of rows and columns from the user
+        System.out.print("Enter the number of rows (m): ");
+        int m = scanner.nextInt();
+        System.out.print("Enter the number of columns (n): ");
+        int n = scanner.nextInt();
+
+        // Initialize the array
+        int[][] array = new int[m][n];
+
+        // Get array elements from the user
+        System.out.println("Enter the elements for the array (m*n elements):");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                array[i][j] = scanner.nextInt();
+            }
+        }
+
+        // Print the array in matrix format (m x n)
+        System.out.println("\nThe array in " + m + "x" + n + " format is:");
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println(); // Move to the next row after printing each row
+        }
+
+        scanner.close();
+    }
+}
+ */

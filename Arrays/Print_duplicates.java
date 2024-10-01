@@ -1,7 +1,7 @@
 // Program to print the duplicate elements of an array.
 import java.util.*;
 
-public class Removed_duplicates {
+public class Print_duplicates {
     public static void main(String[] args) {      
           
         //Initialize array   
